@@ -16,7 +16,7 @@ This was created as part of a Coursera lab to demonstrate **REST API development
 
 ---
 
-## 🚀 Features
+## Features
 
 - **User Registration & Login** with session-level JWT authentication
 - **REST API Endpoints** for:
@@ -27,6 +27,4 @@ This was created as part of a Coursera lab to demonstrate **REST API development
 - **Async/Await and Promises** for asynchronous operations
 - Fully documented for clarity and peer review
 
----
 
-## 📂 Project Structure
