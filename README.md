@@ -52,6 +52,7 @@ Developed as part of a Coursera lab, this repository heavily emphasizes modern J
 | **Asynchronous Logic**| Promises, Async/Await | Handling non-blocking server operations and data retrieval |
 
 📁 Project Structure
+```text
 expressBookReviews/
 ├── final_project/
 │   ├── router/
@@ -62,6 +63,7 @@ expressBookReviews/
 │   └── package.json           # Node.js dependencies and script commands
 ├── LICENSE                    # Project license
 └── README.md                  # Project documentation
+```
 
 ⚙️ Local Setup & Execution
 To test the API endpoints locally on your machine:
