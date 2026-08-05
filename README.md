@@ -92,4 +92,4 @@ The server will initialize and begin listening for API requests on the designate
 👤 Author
 Hamed Payanda
 •	GitHub: @HAMED-PAYANDA
-Completed as part of the IBM Full-Stack Software Developer Professional Certificate.
+Completed as part of the IBM Full-Stack Software Developer Professional.
