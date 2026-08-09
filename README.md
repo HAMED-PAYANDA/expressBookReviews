@@ -7,8 +7,12 @@ A server-side REST API built with Node.js and Express, featuring JWT-based authe
 
 [![Node.js](https://img.shields.io/badge/Node.js-Backend-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
 [![Express.js](https://img.shields.io/badge/Express.js-Framework-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](#)
 [![JWT](https://img.shields.io/badge/JWT-Authentication-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white)](https://jwt.io/)
+<br>
+[![IBM Certification](https://img.shields.io/badge/IBM-Full%20Stack%20Software%20Developer%20Professional-blue?style=for-the-badge&logo=ibm)](https://www.coursera.org/professional-certificates/ibm-full-stack-cloud-developer)
 [![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)](#)
+
 
 </div>
 
@@ -35,6 +39,40 @@ Developed as part of a Coursera lab, this repository heavily emphasizes modern J
 │ User (w/ JWT) │       │                    │       │   Book Reviews     │
 └───────────────┘       └────────────────────┘       └────────────────────┘
 ```
+```mermaid
+graph LR
+    subgraph Clients ["👥 Clients"]
+        direction TB
+        Guest(["👤 Guest User"])
+        Auth(["🔐 Authenticated User<br>(w/ JWT)"])
+    end
+
+    subgraph API ["⚙️ Express API"]
+        direction TB
+        Public["🌐 Public Routes<br>(Search / Get All)"]
+        Protected["🛡️ Protected Routes<br>(JWT Session Auth)"]
+    end
+
+    subgraph Actions ["🗄️ Data Actions"]
+        direction TB
+        Read[("📖 Read Book Data")]
+        Write[("📝 Add / Edit / Drop<br>Book Reviews")]
+    end
+
+    Guest -->|"HTTP GET"| Public
+    Public -->|"Retrieves Data"| Read
+
+    Auth -->|"HTTP POST/PUT/DELETE"| Protected
+    Protected -->|"Modifies DB"| Write
+
+    style Guest fill:#e8f5e9,stroke:#388e3c,stroke-width:2px,color:#000
+    style Auth fill:#e1f5fe,stroke:#0288d1,stroke-width:2px,color:#000
+    style Public fill:#f3e5f5,stroke:#8e24aa,stroke-width:2px,color:#000
+    style Protected fill:#f3e5f5,stroke:#8e24aa,stroke-width:2px,color:#000
+    style Read fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#000
+    style Write fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#000
+```
+
 ✨ Key Features Implemented
 •	User Authentication: Secure registration and login flows utilizing session-level JWT authentication.
 •	Public REST Endpoints: Retrieve the complete catalog of books or perform targeted searches by ISBN, Author, or Title.
@@ -89,7 +127,9 @@ node index.js
 
 The server will initialize and begin listening for API requests on the designated local port.
 
-👤 Author
-Hamed Payanda
-•	GitHub: @HAMED-PAYANDA
-Completed as part of the IBM Full-Stack Software Developer Professional.
+## 👤 Author
+
+**Hamed Payanda**
+* **GitHub:** [@HAMED-PAYANDA](https://github.com/HAMED-PAYANDA)
+* Completed as part of the **IBM Full-Stack Software Developer Professional**.
+
