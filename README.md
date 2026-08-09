@@ -74,10 +74,15 @@ graph LR
 ```
 
 ✨ Key Features Implemented
+
 •	User Authentication: Secure registration and login flows utilizing session-level JWT authentication.
+
 •	Public REST Endpoints: Retrieve the complete catalog of books or perform targeted searches by ISBN, Author, or Title.
+
 •	Protected REST Endpoints: Authenticated users can publish, modify, or permanently delete their own book reviews.
+
 •	Asynchronous Operations: Fully implemented Promises and Async/Await architecture to simulate real-world database fetching.
+
 •	Modular Routing: Clean separation of concerns between public access routes and authenticated-only routing.
 
 ## 🛠️ Core Tech Stack
