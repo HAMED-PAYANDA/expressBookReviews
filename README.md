@@ -132,6 +132,14 @@ node index.js
 
 The server will initialize and begin listening for API requests on the designated local port.
 
+---
+
+## 📜 License
+
+This project is licensed under the [Apache 2.0 License](LICENSE).
+
+---
+
 ## 👤 Author
 
 **Hamed Payanda**
