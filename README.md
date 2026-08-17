@@ -113,18 +113,24 @@ The following screenshots demonstrate the server initialization and the successf
 ---
 
 ## 📁 Project Structure
+
 ```text
 expressBookReviews/
-├── final_project/
+├── final_project/             # Main application directory
 │   ├── router/
 │   │   ├── auth_users.js      # Protected routes requiring JWT (add/edit/delete reviews)
 │   │   ├── general.js         # Public API routes (get books, search, register)
 │   │   └── booksdb.js         # Mock database containing the book catalog
 │   ├── index.js               # Application entry point, server, and middleware config
 │   └── package.json           # Node.js dependencies and script commands
-├── LICENSE                    # Project license
-└── README.md                  # Project documentation
+├── .DS_Store                  # macOS custom directory attributes
+├── .gitignore                 # Specifies intentionally untracked files for Git
+├── LICENSE                    # Project license (Apache 2.0)
+├── README.md                  # Project documentation
+├── screenshot1.png            # Visual proof: Server running & ISBN route test
+└── screenshot2.png            # Visual proof: Public API catalog retrieval
 ```
+
 ---
 
 ## ⚙️ Local Setup & Execution
