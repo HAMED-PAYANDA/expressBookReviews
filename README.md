@@ -72,6 +72,7 @@ graph LR
     style Read fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#000
     style Write fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#000
 ```
+---
 
 ✨ Key Features Implemented
 
@@ -85,6 +86,8 @@ graph LR
 
 •	Modular Routing: Clean separation of concerns between public access routes and authenticated-only routing.
 
+---
+
 ## 🛠️ Core Tech Stack
 
 | Category | Technologies Used | Purpose |
@@ -94,7 +97,22 @@ graph LR
 | **Authentication** | JSON Web Tokens (JWT)| Securing user sessions and protecting sensitive API endpoints |
 | **Asynchronous Logic**| Promises, Async/Await | Handling non-blocking server operations and data retrieval |
 
-📁 Project Structure
+---
+## 📸 Visual Proof
+
+The following screenshots demonstrate the server initialization and the successful validation of the REST API endpoints using Postman.
+
+**1. Server Initialization & Route Testing (ISBN)**  
+*This view captures the complete developer environment in the Cloud IDE. The terminal shows the successful installation of dependencies and the Express server running on the designated port. The Postman interface at the bottom verifies a successful `GET` request to retrieve a specific book's details using its ISBN.*
+![Server Running and ISBN Route](screenshot1.png)
+
+**2. Public API Catalog Retrieval**  
+*Validating the primary public endpoint via Postman. The application successfully processes the `GET` request and returns an HTTP `200 OK` status along with the complete, correctly formatted JSON database of all available books.*
+![Full Book Catalog Retrieval](screenshot2.png)
+
+---
+
+## 📁 Project Structure
 ```text
 expressBookReviews/
 ├── final_project/
@@ -107,8 +125,10 @@ expressBookReviews/
 ├── LICENSE                    # Project license
 └── README.md                  # Project documentation
 ```
+---
 
-⚙️ Local Setup & Execution
+## ⚙️ Local Setup & Execution
+
 To test the API endpoints locally on your machine:
 1. Clone the Repository
 ```text
